@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 from konlpy.tag import Twitter
 import MakeCloud as cloud
