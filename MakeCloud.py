@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from konlpy.tag import Okt
-import MakeCloud as cloud
 from collections import Counter
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
