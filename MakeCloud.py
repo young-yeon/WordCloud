@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from konlpy.tag import Twitter
+from konlpy.tag import Okt
 import MakeCloud as cloud
 from collections import Counter
 from wordcloud import WordCloud
@@ -10,13 +10,13 @@ import matplotlib.pyplot as plt
 class Cloud:
 
     def __init__(self, cnt = 100):
-        self.twitter = Twitter()
+        self.okt = Okt()
         self.data = list()
         self.word_count = cnt
 
     
     def add_data(self, string):
-        input_data = self.twitter.nouns(string)
+        input_data = self.okt.nouns(string)
         self.data += input_data
 
     
